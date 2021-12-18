@@ -1,82 +1,38 @@
 {
-  "resourceType": "Bundle",
-  "type": "collection",
-  "entry": [
-    {
-      "fullUrl": "resource:0",
-      "resource": {
-        "resourceType": "Patient",
-        "name": [
-          {
-            "family": "Tu papacito",
-            "given": [
-              "John",
-              "B."
-            ]
-          }
-        ],
-        "birthDate": "1951-01-20"
-      }
-    },
-    {
-      "fullUrl": "resource:1",
-      "resource": {
-        "resourceType": "Immunization",
-        "meta": {
-          "security": [{"system": "https://smarthealth.cards/ial", "code": "IAL1.2"}]
-        },
-        "status": "completed",
-        "vaccineCode": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/sid/cvx",
-              "code": "207"
-            }
-          ]
-        },
-        "patient": {
-          "reference": "resource:0"
-        },
-        "occurrenceDateTime": "2021-01-01",
-        "performer": [
-          {
-            "actor": {
-              "display": "ABC General Hospital"
-            }
-          }
-        ],
-        "lotNumber": "0000001"
-      }
-    },
-    {
-      "fullUrl": "resource:2",
-      "resource": {
-        "resourceType": "Immunization",
-        "meta": {
-          "security": [{"system": "https://smarthealth.cards/ial", "code": "IAL1.2"}]
-        },
-        "status": "completed",
-        "vaccineCode": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/sid/cvx",
-              "code": "207"
-            }
-          ]
-        },
-        "patient": {
-          "reference": "resource:0"
-        },
-        "occurrenceDateTime": "2021-01-29",
-        "performer": [
-          {
-            "actor": {
-              "display": "ABC General Hospital"
-            }
-          }
-        ],
-        "lotNumber": "0000007"
-      }
-    }
-  ]
-}
+				"resourceType":"Bundle",
+				"type":"collection",
+				"entry":[
+						{
+						"fullUrl":"resource:0",
+						"resource":{
+							 "resourceType":"Patient",
+							 "name":[{
+								   "family":"WU",
+								   "given":["SHAUNY SHUANG-YANG"]}],
+								   "birthDate":"1993-03-13"}},
+						{"fullUrl":"resource:1",
+								   "resource":{
+								   "resourceType":"Immunization",
+								   "status":"completed",
+								   "vaccineCode":{
+										   "coding":[
+										   {"system":"http://hl7.org/fhir/sid/cvx","code":"208"},
+										   {"system":"http://snomed.info/sct","code":"28581000087106"}]},
+										   "patient":{"reference":"resource:0"},
+										   "occurrenceDateTime":"2021-05-19",
+										   "lotNumber":"FA8721",
+										   "performer":[{"actor":{"display":"Surrey North  COVID Immunization Centre"}
+										   }]}},
+						{"fullUrl":"resource:2",
+								   "resource":{
+								   "resourceType":"Immunization",
+								   "status":"completed",
+								   "vaccineCode":{
+										   "coding":[{
+										   "system":"http://hl7.org/fhir/sid/cvx","code":"208"},
+										   {"system":"http://snomed.info/sct","code":"28581000087106"}]},
+										   "patient":{"reference":"resource:0"},
+										   "occurrenceDateTime":"2021-07-18",
+										   "lotNumber":"FA9099",
+										   "performer":[{"actor":{"display":"Surrey North  COVID Immunization Centre"}
+										   }]}}]}
