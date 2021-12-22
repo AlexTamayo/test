@@ -1,1 +1,83 @@
-Nothing here.
+{
+				  "resourceType": "Bundle",
+				  "type": "collection",
+				  "entry": [
+				    {
+					  "fullUrl": "resource:0",
+					  "resource": {
+						  "resourceType": "Patient",
+						  "name": [
+						    {
+							  "family": "TAMAYO DE LA CRUZ",
+							  "given": [
+							    "ALEXANDER"
+							  ]
+							}
+						  ],
+						  "birthDate": "1986-07-10"
+						}
+					},
+					{
+					  "fullUrl": "resource:1",
+					  "resource": {
+						  "resourceType": "Immunization",
+						  "status": "completed",
+						  "vaccineCode": {
+							  "coding": [
+							    {
+								  "system": "http://hl7.org/fhir/sid/cvx",
+								  "code": "208"
+								},
+								{
+								  "system": "http://snomed.info/sct",
+								  "code": "28581000087106"
+								}
+							  ]
+							},
+							"patient": {
+							    "reference": "resource:0"
+							  },
+							  "occurrenceDateTime": "2021-06-19",
+							  "lotNumber": "EY0583",
+							  "performer": [
+							    {
+								  "actor": {
+								    "display": "Vancouver Convention Centre"
+									}
+								}
+							  ]
+						}
+					},
+					{
+					  "fullUrl": "resource:2",
+					  "resource": {
+						  "resourceType": "Immunization",
+						  "status": "completed",
+						  "vaccineCode": {
+                "coding": [
+							  {
+							    "system": "http://hl7.org/fhir/sid/cvx",
+								"code": "208"
+							  },
+							  {
+							  "system": "http://snomed.info/sct",
+							  "code": "28581000087106"
+							  }
+							 ]
+							},
+							"patient": {
+							  "reference": "resource:0"
+							  },
+							  "occurrenceDateTime": "2021-07-02",
+							  "lotNumber": "043D21A",
+							  "performer": [
+							    {
+								  "actor": {
+									  "display": "Vancouver Convention Centre"
+									}
+								}
+							  ]
+						}
+					}
+				  ]
+				}
